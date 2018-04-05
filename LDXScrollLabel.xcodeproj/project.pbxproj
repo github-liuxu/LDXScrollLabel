@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B68948CE31E510F44FADF1A /* libPods-LDXScrollLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EC1B0B256ABC617522489 /* libPods-LDXScrollLabel.a */; };
 		B57CFA771FEA8A2A00F4E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57CFA761FEA8A2A00F4E172 /* AppDelegate.m */; };
 		B57CFA7A1FEA8A2A00F4E172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57CFA791FEA8A2A00F4E172 /* ViewController.m */; };
 		B57CFA7D1FEA8A2A00F4E172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57CFA7B1FEA8A2A00F4E172 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632EC1B0B256ABC617522489 /* libPods-LDXScrollLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LDXScrollLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57CFA721FEA8A2A00F4E172 /* LDXScrollLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDXScrollLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57CFA751FEA8A2A00F4E172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B57CFA761FEA8A2A00F4E172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		B57CFA841FEA8A2A00F4E172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57CFA8B1FEA8A3B00F4E172 /* LDXScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDXScrollLabel.h; sourceTree = "<group>"; };
 		B57CFA8C1FEA8A3C00F4E172 /* LDXScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDXScrollLabel.m; sourceTree = "<group>"; };
+		D43BFF859C8177C75A6A95AF /* Pods-LDXScrollLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDXScrollLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDXScrollLabel/Pods-LDXScrollLabel.release.xcconfig"; sourceTree = "<group>"; };
+		DD464D1E27C451F2632F8403 /* Pods-LDXScrollLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDXScrollLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDXScrollLabel/Pods-LDXScrollLabel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B68948CE31E510F44FADF1A /* libPods-LDXScrollLabel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,12 +56,31 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		78509699D24D9B4593F3EA95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD464D1E27C451F2632F8403 /* Pods-LDXScrollLabel.debug.xcconfig */,
+				D43BFF859C8177C75A6A95AF /* Pods-LDXScrollLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99EBDE0672BA7B455B5DDDD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632EC1B0B256ABC617522489 /* libPods-LDXScrollLabel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B57CFA691FEA8A2A00F4E172 = {
 			isa = PBXGroup;
 			children = (
 				0C18E90620768FCE00226159 /* Classes */,
 				B57CFA741FEA8A2A00F4E172 /* LDXScrollLabel */,
 				B57CFA731FEA8A2A00F4E172 /* Products */,
+				78509699D24D9B4593F3EA95 /* Pods */,
+				99EBDE0672BA7B455B5DDDD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57CFA881FEA8A2A00F4E172 /* Build configuration list for PBXNativeTarget "LDXScrollLabel" */;
 			buildPhases = (
+				B8DB9E75A2D99FC81ED700DC /* [CP] Check Pods Manifest.lock */,
 				B57CFA6E1FEA8A2A00F4E172 /* Sources */,
 				B57CFA6F1FEA8A2A00F4E172 /* Frameworks */,
 				B57CFA701FEA8A2A00F4E172 /* Resources */,
@@ -149,6 +174,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8DB9E75A2D99FC81ED700DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LDXScrollLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B57CFA6E1FEA8A2A00F4E172 /* Sources */ = {
@@ -290,6 +336,7 @@
 		};
 		B57CFA891FEA8A2A00F4E172 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD464D1E27C451F2632F8403 /* Pods-LDXScrollLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +352,7 @@
 		};
 		B57CFA8A1FEA8A2A00F4E172 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43BFF859C8177C75A6A95AF /* Pods-LDXScrollLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
